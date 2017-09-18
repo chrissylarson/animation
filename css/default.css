@@ -1,0 +1,106 @@
+/* this is where all of your CSS styles go */
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#anagram_container {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    left: 55%;
+    top: 38%;
+    margin-top: -50px;
+    margin-left: -200px;
+}
+
+.type {
+    font-family: Polly;
+    font-size: 100px;
+    float: left;
+    line-height:20px;
+}
+
+@-webkit-keyframes c_move {
+    0% { left: 0px; }
+    20% { left: 0px; }
+    75% { left: 58px; }
+    100% { left: 58px; }
+}
+
+#c {
+    position: relative;
+    -webkit-animation: c_move 1s linear infinite alternate;
+    cubic-bezier(1,0,0,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes a_move {
+    0% { top: 0px; left: 0px; }
+    25% { top: 56px; left: 0px;}
+    50% { top: 56px; left: 56px;}
+    75% { top: 0px; left: 112px; }
+    100% { top: 0px; left: 112px; }
+}
+
+#a {
+    position: relative;
+    -webkit-animation: a_move 1s linear infinite alternate;
+    cubic-bezier(1,0,0,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes n_move {
+    0% { top: 0px; left: 0px; }
+    20% { top: 0px; left: 0px; }
+    35% { top: -56px; left: 0px;}
+    50% { top: -56px; left: 56px;}
+    75% { top: 0px; left: 112px; }
+    100% { top: 0px; left: 112px; }
+}
+
+#n {
+    position: relative;
+    -webkit-animation: n_move 1s linear infinite alternate;
+    cubic-bezier(1,0,0,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes o_move {
+    0% { top: 0px; left: 0px; }
+    20% { top: 0px; left: 0px; }
+    35% { top: 100px; left: -50px;}
+    50% { top: 100px; left: -150px;}
+    75% { top: 0px; left: -190px; }
+    100% { top: 0px; left: -190px; }
+}
+
+#o {
+    position: relative;
+    -webkit-animation: o_move 1s linear infinite alternate;
+    cubic-bezier(1,0,0,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes e_move {
+    0% { top: 0px; left: 0px; }
+    20% { top: 0px; left: 0px; }
+    35% { top: -100px; left: -50px;}
+    50% { top: -100px; left: -90px;}
+    75% { top: 0px; left: -135px; }
+    100% { top: 0px; left: -135px; }
+}
+
+#e {
+    position: relative;
+    -webkit-animation: e_move 1s linear infinite alternate;
+    cubic-bezier(1,0,0,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
